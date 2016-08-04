@@ -34,7 +34,11 @@ ArchiveURL     := Concatenation("https://github.com/gap-packages/semirings/",
                                 "/semirings-", ~.Version),
 README_URL     := Concatenation( ~.PackageWWWHome, "README" ),
 PackageInfoURL := Concatenation( ~.PackageWWWHome, "PackageInfo.g" ),
-
+SourceRepository := rec( 
+  Type := "git", 
+  URL := "https://github.com/gap-packages/semirings"
+),
+IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
 ArchiveFormats := ".tar.gz",
 
 ##  Status information. Currently the following cases are recognized:
