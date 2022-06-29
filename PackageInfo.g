@@ -27,7 +27,7 @@ Persons := [
   ),
 ],
 
-PackageWWWHome := "http://gap-packages.github.io/semirings/",
+PackageWWWHome := "https://gap-packages.github.io/semirings/",
 
 ArchiveURL     := Concatenation("https://github.com/gap-packages/semirings/",
                                 "releases/download/v", ~.Version,
